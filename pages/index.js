@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import buildspaceLogo from '../assets/Group 71.png';
-import sheLogo from '../assets/she-logo.png';
+import lyricalLogo from '../assets/lyrical-logo.png';
 import { useState } from 'react';
 
 const Home = () => {
@@ -125,16 +125,16 @@ const Home = () => {
   return (
     <div className="root">
       <Head>
-        <title>S-H-E | buildspace </title>
+        <title>LYRICAL-MASTER | buildspace </title>
       </Head>
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>S-H-E: Decoding the Female Psyche</h1>
+            <h1> Whispers of Affection: Expressive Love Poems</h1>
           </div>
-          <Image src={sheLogo} alt="Pretty girl" />
+          <Image src={lyricalLogo} alt="Balls Weiner" />
           <div className="header-subtitle">
-            <h2>Delving into Women's Minds and Enhancing Understanding</h2>
+            <h2>Unleash your feelings with heartfelt words of love</h2>
           </div>
         </div>
         <audio
@@ -145,7 +145,7 @@ const Home = () => {
         />
         <div className="prompt-container">
           <textarea
-            placeholder="Hello I am  S-H-E, Shall I Fuck with your head?"
+            placeholder="Hello how may i serenade you?"
             className="prompt-box"
             value={userInput}
             onChange={onUserChangedText}
@@ -172,7 +172,7 @@ const Home = () => {
                 {isGenerating ? (
                   <span className="loader"></span>
                 ) : (
-                  <p>Confuse Me</p>
+                  <p>Serenade Me</p>
                 )}
               </div>
             </a>
